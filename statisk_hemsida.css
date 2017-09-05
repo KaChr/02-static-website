@@ -13,7 +13,7 @@ body {
 } 
 
 nav {
-    ;
+
 }
 
 .header {
@@ -63,7 +63,17 @@ p {
     font-size: 18px;
 }
 
-footer {
+#gradient2 {
+    height: 6em;
+    background-color: red;
+    background-image:
+      linear-gradient(red, #f06d06);
+      margin: 0;
+      color: white;
+      bottom: 50px;
+}
+
+/*#gradient2 {
     width: 100%;
     bottom: 50px;
     color: white;
@@ -71,7 +81,7 @@ footer {
     margin: 0;
     float: right;
     position: right;
-}
+}*/
 
 .footer1 {
     float: right;
