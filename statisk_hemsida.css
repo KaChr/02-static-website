@@ -1,19 +1,22 @@
+@import url('http://fonts.googleapis.com/css?family=Lato');
+
 body, html {
     height: 100%;
-
+    margin: 0;
+    font: 1em Lato, sans-serif;
 }
 
-body {
-   margin: 0px;
+.content {
+    min-height: 100%;
+}
+
+.content-inside {
+    padding: 20px;
+    padding-bottom: 50px;
 }
 
 #main {
     width: 100%;
-
-} 
-
-nav {
-
 }
 
 .header {
@@ -26,18 +29,17 @@ nav {
 }
 
 .gradient {
+    position: relative;
     height: 6em;
     background-color: red;
     background-image:
       linear-gradient(red, #f06d06);
-    
-      
-  }
+}
 
 
 .parallax { 
     /* The image used */
-    background-image: url("jakub-kapusnak-319767.jpg");
+    background-image: url("./jakub-kapusnak-319767.jpg");
   
 
     /* Full height */
@@ -64,13 +66,14 @@ p {
 }
 
 #gradient2 {
-    height: 6em;
-    background-color: red;
-    background-image:
-      linear-gradient(red, #f06d06);
-      margin: 0;
-      color: white;
-      bottom: 50px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#f06d06));
+    background-image: -webkit-linear-gradient(top, red, #f06d06);
+    background-image: -moz-linear-gradient(top, red, #f06d06);
+    background-image: linear-gradient(to bottom, red, #f06d06);
+    margin: 0;
+    color: white;
+    height: 50px;
+    margin-top: -50px;
 }
 
 /*#gradient2 {
@@ -83,13 +86,42 @@ p {
     position: right;
 }*/
 
-.footer1 {
-    float: right;
-}
-
 ul {
     list-style: none;
     margin-right: 40px;
+}
+
+footer > h4 {
+    margin: 0;
+}
+
+footer > ul {
+    margin: 0;
+}
+
+footer > ul > li {
+    display: inline-block;
+}
+
+nav[data-behavior="horizontal"] {
+    position: absolute;
+    bottom: 0;
+}
+
+nav[data-behavior="horizontal"] ul > li {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 15px;
+}
+
+nav[data-behavior="horizontal"] ul > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff; 
+}
+
+nav[data-behavior="horizontal"] ul > li > a:hover {
+    text-decoration: underline;
 }
 
 
