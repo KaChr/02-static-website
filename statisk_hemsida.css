@@ -11,43 +11,59 @@ body, html {
     font: 1em Lato, sans-serif;
 }
 
-body {
+/*body {
     background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/nasty_fabric.png);
-   /* margin: .5em;  ? */
+   /* margin: .5em;  ? 
     font: 1em "Lato", sans-serif;
   }
-  
+  */
 
-.content {
-    min-height: 100%;
+  .content {
+      background-color: white;
+      height: 700px;
 }
 
-.content-inside {
+h2, .om_oss {
+    margin: 20px;
+    float: left;
+}
+
+/*.content-inside {
     padding: 20px;
     padding-bottom: 50px;
-}
+}*/
 
-#main {
+/*#main {
     width: 100%;
-}
+}*/
 
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-   
+    background-image: -webkit-gradient(linear, left top, left bottom, from red), to(#f06d06);
+    background-image: -webkit-linear-gradient(top, red,#f06d06);
+    background-image: -moz-linear-gradient(top, red, #f06d06);
+    background-image: linear-gradient(to bottom, red, #f06d06);
+    margin: 0em;
 }
 
+/*.gradient {
+
+}*/
+
+/*
 .gradient {
     position: relative;
     height: 6em;
     background-color: red;
     background-image:
       linear-gradient(red, #f06d06);
+    width: 100%; 
+    height: 18%; 
 }
-
+*/
 
 .parallax { 
     /* The image used */
@@ -71,10 +87,36 @@ h1 {
     text-align: center;
     color: #F7F8F5;
     margin-top: 0px; 
+    height: 100%;
+    width: 100%;
+}
+
+.a1, .a2 {
+    width: 50%;
+    float: left;
 }
 
 p {
+    float: left;
+    width: 50%;
+    margin: 20px;
     font-size: 18px;
+}
+
+/*.content {
+    float: right;
+    width: 50%;
+    margin: 20px;
+}*/
+
+.om_oss {
+    
+    width: 50%;
+}
+
+iframe {
+    float: left;
+    width: 50%;
 }
 
 #gradient2 {
@@ -106,34 +148,41 @@ p {
 
 footer > h4 {
     margin: 0;
+    padding-left: 15px;
 }
 
 footer > ul {
+    width: 100%;
+    height: 100%;
     margin: 0;
 }
 
 footer > ul > li {
     display: inline-block;
+    padding: 0 10px 0 10px;
 }
 
-/* margin i footern krånglar med den här också (anchor FOTO)
-a {
+ 
+#a {
+    position: sticky ;
     float: right;
-    margin: 0;
-}*/
+    margin-right: 5px;    
+}
 
 nav[data-behavior="horizontal"] {
     width: 100%;
   }
   nav[data-behavior="horizontal"] ul {
     width: 100%;
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
   nav[data-behavior="horizontal"] ul > li {
     position: relative;
     float: left;
-    padding: .25em 1em;
-    margin: 1.25em 1em;
+    padding: 0em 1em; 
+    margin: 0em 1em;
     text-transform: uppercase;
     cursor: pointer;
     background: rgba(255, 255, 255, 0.8);
@@ -208,7 +257,19 @@ nav[data-behavior="horizontal"] ul > li > a:hover {
     nav[role="full-horizontal"] ul > li:after {
       box-shadow: none;
     }
+
+    .a1, a2 {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
   }
+
+@media screen and (max-width: em) {
+    
+}  
 
   /*-----------------------------------------------------------------------------------
   meny - kolla igenom igen
